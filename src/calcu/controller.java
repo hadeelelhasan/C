@@ -58,6 +58,7 @@ class CalcListener implements ActionListener{
 				m.setCheck(1);
 				//JOptionPane.showMessageDialog(null, "enter just numbers ");
 			}
+			
 			}
 		else if (e.getActionCommand()=="mul")
 		{
