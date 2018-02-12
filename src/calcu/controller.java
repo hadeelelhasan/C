@@ -8,8 +8,8 @@ import javax.swing.JOptionPane;
 import calcu.modol;
 
 public class controller {
-private View v;
-private modol m;
+private View v=new View();
+private modol m=new modol();
 
 public controller(View v,modol m)
 {
@@ -19,7 +19,7 @@ public controller(View v,modol m)
 	this.v.addCalcListener(new CalcListener());
 	
 
-
+  
 
 }
 class CalcListener implements ActionListener{
@@ -38,10 +38,10 @@ class CalcListener implements ActionListener{
 				m.getTheRes();
 			    v.setAns(m.getTheRes());
 			}
-			catch(NumberFormatException e2)
+			catch(NumberFormatException e3)
 			{
 				m.setCheck(1);
-				JOptionPane.showMessageDialog(null, "enter just numbers ");
+				//JOptionPane.showMessageDialog(null, "enter just numbers ");
 				//v.setAns(m.getTheRes());
 			}
 			}
@@ -87,7 +87,7 @@ class CalcListener implements ActionListener{
 			
 		    v.setAns3(m.getTheRes());
 			}
-			catch(NumberFormatException e2) {
+			catch(NumberFormatException e4) {
 				m.setCheck(1);
 				//JOptionPane.showMessageDialog(null, "enter just numbers ");
 			}
@@ -102,7 +102,7 @@ class CalcListener implements ActionListener{
 			if (m.getCheck()!=1) 
 		    v.setAns4(m.getTheRes());
 			}
-			catch(NumberFormatException e2) {
+			catch(NumberFormatException e5) {
 				m.setCheck(1);
 				//JOptionPane.showMessageDialog(null, "enter just numbers ");
 			}
@@ -116,7 +116,7 @@ class CalcListener implements ActionListener{
 			if (m.getCheck()!=1) 
 		    v.setAns5(m.getTheRes());
 			}
-			catch(NumberFormatException e2) {
+			catch(NumberFormatException e6) {
 				m.setCheck(1);
 				//JOptionPane.showMessageDialog(null, "enter just numbers ");
 			}
